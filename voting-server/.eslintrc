@@ -61,7 +61,7 @@
     "no-alert": 1,
     "no-caller": 1,
     "no-div-regex": 1,
-    "no-else-return": 1,
+    "no-else-return": 0,
     "no-empty-label": 1,
     "no-eq-null": 0,
     "no-eval": 1,
@@ -186,7 +186,7 @@
     /* Babel */
     "babel/object-shorthand": [1, "always"],
     "babel/generator-star-spacing": [1, "after"],
-    "babel/new-cap": 1,
+    "babel/new-cap": 0,
     "babel/object-curly-spacing": [1, "always"],
 
     /* React */
