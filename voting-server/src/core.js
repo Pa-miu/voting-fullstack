@@ -1,23 +1,25 @@
-import {List, Map} from 'immutable';
+import { List, Map } from 'immutable';
 
 export function setEntries(state, entries) {
   return state.set('entries', List(entries));
 }
 
-function getWinners(vote) {
-    if(!vote) return [];
-    const [a, b] = vote.get('pair');
-    const aVotes = vote.getIn(['tally', a], 0);
-    const bVotes = vote.getIn(['tally', b], 0);
-    if (aVotes > bVotes) {
-      return [a];
-    }
-    else if (bVotes > aVotes) {
-      return [b];
-    }
-    else {
-      return [a, b];
-    }
+function getWinners(voting) {
+  if(!voting) {
+    return [];
+  }
+  const [a, b] = voting.get('pair');
+  const aVotes = voting.getIn(['tally', a], 0);
+  const bVotes = voting.getIn(['tally', b], 0);
+  if (aVotes > bVotes) {
+    return [a];
+  }
+  else if (bVotes > aVotes) {
+    return [b];
+  }
+  else {
+    return [a, b];
+  }
 }
 
 export function next(state) {
@@ -31,7 +33,7 @@ export function next(state) {
   }
   else {
     return state.merge({
-      vote: Map({pair: entries.take(2)}),
+      vote: Map({ pair: entries.take(2) }),
       entries: entries.skip(2)
     });
   }
