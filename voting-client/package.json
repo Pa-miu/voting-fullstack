@@ -1,0 +1,21 @@
+{
+  "name": "voting-client",
+  "version": "1.0.0",
+  "description": "Fullstack Redux Voting App Server",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kusera/voting-fullstack.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "kusera",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}
