@@ -1,7 +1,7 @@
 {
   "name": "voting-server",
   "version": "1.0.0",
-  "description": "Fullstack Redux Voting App",
+  "description": "Fullstack Redux Voting App Server",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
     "test:watch": "npm run test -- --watch"
   },
   "keywords": [],
-  "author": "",
+  "author": "kusera",
   "license": "ISC",
   "babel": {
     "presets": [
