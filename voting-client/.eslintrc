@@ -130,7 +130,6 @@
     "camelcase": [1, { "properties": "always" }],
     "comma-spacing": [1, { "before": false, "after": true }],
     "comma-style": [1, "last"],
-    "computed-property-spacing": [1, "never"],
     "computed-property-spacing": 0,
     "consistent-this": 0,
     "eol-last": 1,
