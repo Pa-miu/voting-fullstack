@@ -1,0 +1,23 @@
+.voting {
+  height: 100%;
+  color: white;
+}
+
+.voting .button:first-child {
+  border-bottom: 2px solid white;
+}
+
+.voting .button {
+  position: relative;
+  height: 50%;
+  background-color: rgb(5, 138, 195);
+  font-family: Helvetica, sans-serif;
+}
+
+.voting .button h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+}

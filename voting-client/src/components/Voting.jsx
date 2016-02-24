@@ -1,3 +1,5 @@
+import '../styles/VotingComponent.css';
+
 import React from 'react';
 
 export default React.createClass({
@@ -9,9 +11,9 @@ export default React.createClass({
     return (
       <div className="voting">
         {this.getPair().map(entry =>
-          <button key={entry}>
+          <div className="button" key={entry}>
             <h1>{entry}</h1>
-          </button>
+          </div>
         )}
       </div>
     );

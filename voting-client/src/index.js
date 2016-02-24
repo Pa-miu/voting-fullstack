@@ -1,3 +1,5 @@
+import './styles/base.css';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Voting from './components/Voting';
