@@ -1,4 +1,6 @@
 .voting {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   color: white;
 }
@@ -8,16 +10,15 @@
 }
 
 .voting .button {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 50%;
   background-color: rgb(5, 138, 195);
   font-family: Helvetica, sans-serif;
 }
 
 .voting .button h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   margin: 0;
-  transform: translate(-50%, -50%);
 }
