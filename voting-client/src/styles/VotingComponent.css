@@ -19,6 +19,10 @@
   font-family: Helvetica, sans-serif;
 }
 
+.voting .button:hover{
+  background-color: rgb(54, 163, 210);
+}
+
 .voting .button h1 {
   margin: 0;
 }
