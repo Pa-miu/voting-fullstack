@@ -5,24 +5,37 @@
   color: white;
 }
 
-.voting .button:first-child {
-  border-bottom: 2px solid white;
+.vote {
+  height: 100%;
 }
 
-.voting .button {
+.button:first-child {
+  margin-bottom: 2px;
+}
+
+.button {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50%;
+  height: calc(50% - 1px);
   background-color: rgb(5, 138, 195);
   font-family: Helvetica, sans-serif;
 }
 
-.voting .button:hover{
+.button:hover{
   background-color: rgb(54, 163, 210);
 }
 
-.voting .button h1 {
+.button h1 {
   margin: 0;
+}
+.winner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: rgb(5, 138, 195);
+  font-family: Helvetica, sans-serif;
 }
