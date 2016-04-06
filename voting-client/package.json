@@ -8,8 +8,8 @@
     "url": "https://github.com/kusera/voting-fullstack.git"
   },
   "scripts": {
-    "wp": "webpack",
-    "wpds": "webpack-dev-server",
+    "wp": "webpack -d",
+    "wpds": "webpack-dev-server -d",
     "test": "mocha --compilers js:babel-core/register --require ignore-styles ./test/test_helper.js 'test/**/*.@(js|jsx)'",
     "test:watch": "npm run test -- --watch --watch-extensions jsx"
   },
