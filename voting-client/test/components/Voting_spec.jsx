@@ -27,7 +27,7 @@ describe('Voting', () => {
 
     const component = renderIntoDocument(
       <Voting pair={["Trainspotting", "28 Days Later"]}
-              vote={vote}/>
+              vote={vote} />
     );
     const buttons = scryRenderedDOMComponentsWithClass(component, 'button');
     Simulate.click(buttons[0]);
@@ -38,7 +38,7 @@ describe('Voting', () => {
   it('disables buttons when user has voted', () => {
     const component = renderIntoDocument(
       <Voting pair={["Trainspotting", "28 Days Later"]}
-              hasVoted="Trainspotting"/>
+              hasVoted="Trainspotting" />
     );
 
     const buttons = scryRenderedDOMComponentsWithClass(component, 'button');
@@ -51,7 +51,7 @@ describe('Voting', () => {
   it('adds label to the voted entry', () => {
     const component = renderIntoDocument(
       <Voting pair={["Trainspotting", "28 Days Later"]}
-              hasVoted="Trainspotting"/>
+              hasVoted="Trainspotting" />
     );
 
     const buttons = scryRenderedDOMComponentsWithClass(component, 'button');
@@ -60,7 +60,7 @@ describe('Voting', () => {
 
   it('renders just the winner when there is one', () => {
     const component = renderIntoDocument(
-      <Voting winner="Trainspotting"/>
+      <Voting winner="Trainspotting" />
     );
 
     const buttons = scryRenderedDOMComponentsWithClass(component, 'button');
