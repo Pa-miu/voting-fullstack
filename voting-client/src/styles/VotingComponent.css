@@ -30,6 +30,7 @@
 .button h1 {
   margin: 0;
 }
+
 .winner {
   display: flex;
   flex-direction: column;
@@ -38,4 +39,43 @@
   height: 100%;
   background-color: rgb(5, 138, 195);
   font-family: Helvetica, sans-serif;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: white;
+}
+
+.tally {
+  height: 90%;
+}
+
+.entry:first-child {
+  margin-bottom: 2px;
+}
+
+.entry {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(50% - 1px);
+  background-color: rgb(5, 138, 195);
+  font-family: Helvetica, sans-serif;
+}
+
+.management {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  color: rgb(5, 138, 195);
+  font-family: Helvetica, sans-serif;
+}
+
+.management:hover {
+  background-color: rgb(242, 251, 255);
 }
