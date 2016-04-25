@@ -30,9 +30,9 @@ export default React.createClass({
             </div>)}
         </div>
         <div className="management">
-          <button ref="next" className="next" onClick={this.props.next} >
+          <div ref="next" className="next" onClick={this.props.next} >
             Next
-          </button>
+          </div>
         </div>
       </div>
   }
