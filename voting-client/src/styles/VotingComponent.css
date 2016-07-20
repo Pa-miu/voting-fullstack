@@ -21,6 +21,7 @@
   height: calc(50% - 1px);
   background-color: rgb(5, 138, 195);
   font-family: Helvetica, sans-serif;
+  cursor: pointer;
 }
 
 .button:hover{
