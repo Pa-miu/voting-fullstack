@@ -31,8 +31,8 @@ export const Results = React.createClass({
               </div>
             </div>)}
         </div>
-        <div className="management">
-          <div ref="next" className="next" onClick={this.props.next} >
+        <div className="management" onClick={this.props.next}>
+          <div ref="next" className="next" >
             Next
           </div>
         </div>
