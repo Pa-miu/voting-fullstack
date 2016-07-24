@@ -19,6 +19,7 @@ export default React.createClass({
         {this.getPair().map(entry =>
           <div className="button"
                 key={entry}
+                disabled={this.isDisabled()}
                 onClick={() => {
                   if (!this.isDisabled()) {
                     this.props.vote(entry);
